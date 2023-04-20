@@ -33,10 +33,17 @@ const toggleOpen = () => isOpen.value = !isOpen.value;
                     </div>
                 </div>
                 <div class="flex flex-row items-center">
-                    <Button @click="toggleDark()" class="mr-2 rounded-full h-11 w-11">
+                    <Button @click="toggleDark()" class="mr-2 rounded-full h-12 w-12">
                         <div class="w-6 h-6 flex items-center justify-center">
                             <font-awesome-icon :icon="isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon'" />
                         </div>
+                    </Button>
+                    <Button @click="toggleDark()" class="mr-2 rounded-full h-12 w-12">
+                        <a href="https://github.com/BadEnd777/BadEnd-Homepage" target="_blank">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <font-awesome-icon icon="fa-brands fa-github" />
+                            </div>
+                        </a>
                     </Button>
                     <!-- <div class="hidden md:block">
                         <Link to="/" class="ml-4 font-medium">Home</Link>
