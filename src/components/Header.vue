@@ -38,7 +38,7 @@ const toggleOpen = () => isOpen.value = !isOpen.value;
                             <font-awesome-icon :icon="isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon'" />
                         </div>
                     </Button>
-                    <Button @click="toggleDark()" class="mr-2 rounded-full h-12 w-12">
+                    <Button class="mr-2 rounded-full h-12 w-12">
                         <a href="https://github.com/BadEnd777/BadEnd-Homepage" target="_blank">
                             <div class="w-6 h-6 flex items-center justify-center">
                                 <font-awesome-icon icon="fa-brands fa-github" />
