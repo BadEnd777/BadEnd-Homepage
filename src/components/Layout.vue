@@ -19,9 +19,9 @@ defineProps({
 </script>
 
 <template>
-    <div class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+    <div class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
         <Header v-if="header" />
-        <Container class="py-8">
+        <Container class="py-8 min-h-screen">
             <slot />
         </Container>
         <Footer v-if="footer" />

@@ -25,48 +25,43 @@ const toggleOpen = () => isOpen.value = !isOpen.value;
     ">
         <Container>
             <div class="flex flex-row justify-between items-center">
-                <div class="flex flex-row">
-                    <img src="/profile.webp" alt="Logo" class="hidden md:block lg:block w-12 h-12 rounded-full mr-4" />
+                <RouterLink to="/" class="flex flex-row items-center">
+                    <img src="/profile.webp" alt="Logo" class="hidden md:block lg:block w-12 h-12 rounded-full mr-2" />
                     <div class="flex flex-col justify-center">
                         <h1 class="text-xl font-bold">BadEnd</h1>
                         <p class="text-sm lg:text-base text-gray-500">Full-Stack Developer</p>
                     </div>
-                </div>
-                <div class="flex flex-row items-center">
-                    <Button @click="toggleDark()" class="mr-2 rounded-full h-12 w-12">
-                        <div class="w-6 h-6 flex items-center justify-center">
-                            <font-awesome-icon :icon="isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon'" />
+                </RouterLink>
+                <div class="flex flex-row items-center space-x-2">
+                    <a href="https://github.com/BadEnd777/BadEnd-Homepage" target="_blank">
+                        <div class="flex items-center justify-center">
+                            <font-awesome-icon icon="fa-brands fa-github" class="w-6 h-6" />
+                        </div>
+                    </a>
+                    <Button @click="toggleDark()" class="rounded-full h-9 w-9">
+                        <div class="flex items-center justify-center">
+                            <font-awesome-icon :icon="isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon'" class="w-4 h-4" />
                         </div>
                     </Button>
-                    <Button class="mr-2 rounded-full h-12 w-12">
-                        <a href="https://github.com/BadEnd777/BadEnd-Homepage" target="_blank">
-                            <div class="w-6 h-6 flex items-center justify-center">
-                                <font-awesome-icon icon="fa-brands fa-github" />
-                            </div>
-                        </a>
-                    </Button>
-                    <!-- <div class="hidden md:block">
-                        <Link to="/" class="ml-4 font-medium">Home</Link>
-                        <Link to="/uses" class="ml-4 font-medium">Uses</Link>
+                    <div class="hidden md:block space-x-4">
+                        <Link to="/" class="font-medium">Home</Link>
+                        <Link to="/work" class="font-medium">Work</Link>
                     </div>
                     <div class="md:hidden relative">
-                        <Button @click="toggleOpen()" class="rounded-md h-10">
+                        <Button @click="toggleOpen()" class="rounded-md text-sm font-medium h-9">
                             Menu
-                            <font-awesome-icon icon="fa-solid fa-bars" class="ml-2" />
                         </Button>
                         <Menu v-model:isOpen="isOpen">
-                            <MenuItems to="/" class="mb-1"
-                                :class="router.currentRoute.value.path === '/' ? 'bg-gray-300 dark:bg-gray-700' : ''"
-                            >
+                            <MenuItems to="/"
+                                :class="router.currentRoute.value.path === '/' ? 'bg-gray-300 dark:bg-gray-700' : ''">
                                 Home
                             </MenuItems>
-                            <MenuItems to="/uses"
-                                :class="router.currentRoute.value.path === '/uses' ? 'bg-gray-300 dark:bg-gray-700' : ''"
-                            >
-                                Uses
+                            <MenuItems to="/work"
+                                :class="router.currentRoute.value.path === '/work' ? 'bg-gray-300 dark:bg-gray-700' : ''">
+                                Work
                             </MenuItems>
                         </Menu>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </Container>

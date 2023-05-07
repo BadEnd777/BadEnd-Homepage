@@ -53,6 +53,7 @@ import Shields from "../components/Shields.vue";
                 <Shields props="Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
                 <Shields props="Vue%203-4FC08D?style=flat-square&logo=vue.js&logoColor=white" />
                 <Shields props="Nuxt.js-00C58E?style=flat-square&logo=nuxt.js&logoColor=white" />
+                <Shields props="Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" />
                 <Shields props="Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
                 <Shields props="Chakra%20UI-319795?style=flat-square&logo=chakra-ui&logoColor=white" />
                 <Shields props="Express-000000?style=flat-square&logo=express&logoColor=white" />
