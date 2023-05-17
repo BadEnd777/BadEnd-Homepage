@@ -9,7 +9,7 @@ const works = [
     },
     {
         title: "Vacant - Modify VRCSDK",
-        description: "Guides content for Honkai Star Rail by Himeko Mains.",
+        description: "Vacant is a modifed version of the VRCSDK by VRChat.",
         image: "/works/vacant.png",
         link: "https://vacant-sdk.pages.dev/",
     },
